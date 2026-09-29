@@ -1,34 +1,274 @@
-/* Navigation Bar */
+/* =========================
+   GENERAL PAGE
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f2ef;
+    color: #1d2226;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   VERTICAL NAVIGATION BAR
+   ========================= */
+
 .navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
+    width: 230px;
+    height: 100vh;
+    background-color: #0a66c2;
     position: fixed;
-    height: 100%;
+    left: 0;
+    top: 0;
     overflow: auto;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar li {
+    margin: 0;
 }
 
 .navbar li a {
     display: block;
-    color: black;
-    padding: 15px;
+    color: white;
+    padding: 17px 25px;
     text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-left: 4px solid transparent;
+    transition: 0.3s;
 }
 
 .navbar li a:hover {
-    background-color: #555;
-    color: white;
+    background-color: #004182;
+    border-left: 4px solid white;
 }
 
 .navbar li a.active {
-    background-color: #04AA6D;
-    color: white;
+    background-color: #004182;
+    border-left: 4px solid white;
 }
 
-/* Main Content */
+
+/* =========================
+   MAIN CONTENT
+   ========================= */
+
 .content {
-    margin-left: 220px;
-    padding: 20px;
+    margin-left: 230px;
+    padding: 40px 70px;
+    max-width: 1200px;
+}
+
+
+/* =========================
+   PROFILE HEADER
+   ========================= */
+
+#home {
+    background-color: white;
+    padding: 35px;
+    margin: 0 0 25px 0;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 38px;
+    color: #0a66c2;
+}
+
+.content > img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    margin: -130px 0 30px 35px;
+}
+
+
+/* =========================
+   SECTION CARDS
+   ========================= */
+
+h2 {
+    background-color: white;
+    padding: 20px 25px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid #ddd;
+    border-bottom: 3px solid #0a66c2;
+    color: #1d2226;
+    font-size: 24px;
+}
+
+p,
+ul,
+ol {
+    background-color: white;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 25px 40px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* =========================
+   ABOUT ME
+   ========================= */
+
+#about + p {
+    font-size: 17px;
+    color: #444;
+}
+
+
+/* =========================
+   SKILLS
+   ========================= */
+
+#skills + ul {
+    list-style-type: none;
+}
+
+#skills + ul li {
+    display: inline-block;
+    background-color: #e8f3ff;
+    color: #0a66c2;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+#skills + ul a {
+    display: block;
+    margin-top: 15px;
+    color: #0a66c2;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#skills + ul a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   EDUCATION
+   ========================= */
+
+#education + ol {
+    padding-left: 60px;
+}
+
+#education + ol li {
+    padding: 8px 0;
+    font-size: 16px;
+}
+
+
+/* =========================
+   PROJECTS
+   ========================= */
+
+#projects + ol {
+    padding-left: 55px;
+}
+
+#projects + ol li {
+    font-size: 19px;
+    font-weight: bold;
+    color: #0a66c2;
+    margin-top: 15px;
+}
+
+#projects + ol p {
+    padding: 5px 0 15px 0;
+    border: none;
+    font-size: 15px;
+    color: #555;
+}
+
+
+/* =========================
+   HOBBIES
+   ========================= */
+
+#hobbies + ol {
+    padding-left: 60px;
+}
+
+#hobbies + ol li {
+    padding: 6px;
+    font-size: 16px;
+}
+
+
+/* =========================
+   WEBSITE / LINKEDIN
+   ========================= */
+
+#website + a {
+    display: inline-block;
+    background-color: #0a66c2;
+    color: white;
+    padding: 12px 25px;
+    margin-top: 0;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#website + a:hover {
+    background-color: #004182;
+}
+
+
+/* =========================
+   MOBILE / SMALL SCREEN
+   ========================= */
+
+@media screen and (max-width: 700px) {
+
+    .navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .navbar li a {
+        text-align: center;
+        padding: 12px;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    #home {
+        font-size: 30px;
+    }
+
+    .content > img {
+        margin: 20px auto;
+    }
 }
