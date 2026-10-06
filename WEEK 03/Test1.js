@@ -62,5 +62,5 @@ function showHobbies() {
 }
 
 function showProjects() {
-    alert("My projects include a C code implementation , Bash Prgramming Java Language.");
+    alert("My projects include a C code implementation , Bash Prgramming Java Lang.");
 }

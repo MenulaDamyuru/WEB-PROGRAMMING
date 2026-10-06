@@ -1,22 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ID CARD</title>
+    <title>CINEC / ARU Student ID Card</title>
     <link rel="stylesheet" href="ID.css">
-
+    <script src="ID.js"></script>
 </head>
 
 <body>
-    <h3>CINEC / ARU </h3><br>
-     <img src="C:\Users\acer\Downloads\IMG_20260418_234234.png" width="200"><br>
 
-     <p><b>Name</b>:MENULA DAMYURU</p>
-     <p><b>ID</b>:M20071229001</p>
-     <p><b>Course</b>:Computer Science</p>
+    <div class="id-card">
 
-     <a href="https://www.linkedin.com/in/menula-damyuru-57400a3ab/">
-        VIEW LINKEDIN PROFILE
-    </a>
-     
+        <div class="card-header">
+            <h2>CINEC CAMPUS</h2>
+            <p>Anglia Ruskin University</p>
+            <span>STUDENT ID CARD</span>
+        </div>
+
+        <div class="card-body">
+
+            <img src="C:\Users\acer\Downloads\IMG_20260418_234234.png"
+                 alt="Student Photo"
+                 class="profile-photo">
+
+            <div class="student-info">
+                <h2>MENULA DAMYURU</h2>
+
+                <p><strong>Student ID:</strong> M20071229001</p>
+                <p><strong>Course:</strong> BSc (Hons) Computer Science</p>
+                <p><strong>Campus:</strong> CINEC Campus</p>
+                <p><strong>Status:</strong> Undergraduate</p>
+            </div>
+
+        </div>
+
+        <div class="card-footer">
+            <a href="https://www.linkedin.com/in/menula-damyuru-57400a3ab/"
+               target="_blank">
+                LinkedIn Profile
+            </a>
+
+            <p>Valid Student Identification</p>
+            <button onclick="changeCampus()">Change Campus</button>
+            <button onclick="changeBackground()">Change Background</button>
+            <button onclick="showMessage()">Show Message</button>
+        </div>
+
+    </div>
+
+    
+
+
 </body>
-
+</html>
