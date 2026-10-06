@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menula Damyuru</title>
+    <link rel="stylesheet" href="pro.css">
+</head>
+
+<body>
+
+    <!-- Colour Controls -->
+    <input type="radio" name="colour" id="blue">
+    <input type="radio" name="colour" id="green">
+    <input type="radio" name="colour" id="pink">
+
+    <h1>Menula Damyuru</h1>
+
+    <img id="profileImage" src="C:\Users\acer\WEB PROGRAMMING\WEB-PROGRAMMING\WEEK 03\1790656305363.jpeg" width="200">
+
+    
+    <button class="activity-button" onclick="changeProfileImage()">
+        Change Profile Image
+    </button>
+
+    <button class="reset-button" onclick="resetProfileImage()">
+        Reset Profile Image
+    </button>
+
+    <h2>About Me</h2>
+
+    <p>
+        I am a Computer Science student at CINEC Campus,
+        interested in web development, database systems,
+        software engineering, and technology.
+    </p>
+
+    <h2>My Skills</h2>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Python</li>
+        <li>MySQL</li>
+        <li>Database Design</li>
+    </ul>
+
+    <h2>My Hobbies</h2>
+
+    <ol>
+        <li>Travelling</li>
+        <li>Photography</li>
+        <li>Football</li>
+    </ol>
+
+    <h2>My Website</h2>
+
+    <a href="https://www.google.com" target="_blank">
+        Visit My Website
+    </a>
+
+    <br><br>
+
+    <!-- Colour Buttons -->
+    <div class="buttons">
+
+        <label for="blue" class="button">
+            Blue Colour
+        </label>
+
+        <label for="green" class="button">
+            Green Colour
+        </label>
+
+        <label for="pink" class="button">
+            Pink Colour
+        </label>
+
+        <!-- Alert Popup -->
+        <label for="alert" class="button">
+            Show Alert
+        </label>
+
+        <!-- Change Name Popup -->
+        <label for="namePopup" class="button">
+            Change Name
+        </label>
+
+    </div>
+
+    <!-- Alert Popup -->
+    <input type="checkbox" id="alert">
+
+    <div class="popup">
+        <div class="popup-box">
+            <h2>Welcome!</h2>
+            <p>Welcome to Menula Damyuru's website!</p>
+            <label for="alert" class="close">OK</label>
+        </div>
+    </div>
+
+    
+
+    <!-- Change Name Popup -->
+    <input type="checkbox" id="namePopup">
+
+    <div class="popup">
+        <div class="popup-box">
+            <h2>Change Name</h2>
+            <p>
+                HTML and CSS cannot directly change text entered
+                by the user without JavaScript.
+            </p>
+
+            <p>
+                You can create different name options using
+                HTML and CSS.
+            </p>
+
+            <label for="namePopup" class="close">
+                Close
+            </label>
+        </div>
+    </div>
+
+    <h2>JavaScript Activities</h2>
+
+    <button onclick="changeName()">Change Name</button>
+
+    <button onclick="changeTheme()">Change Theme</button>
+
+    <button onclick="showMessage()">Show Message</button>
+
+    <button onclick="showSkills()">Show Skills</button>
+
+    <button onclick="showHobbies()">Show Hobbies</button>
+
+    <button onclick="showProjects()">Show Projects</button>
+
+
+
+    <!-- JavaScript File -->
+    <script src="Test1.js"></script>
+    
+
+
+</body>
+</html>

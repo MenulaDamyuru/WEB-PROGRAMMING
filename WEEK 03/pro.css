@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Hide radio buttons and checkboxes */
+
+input {
+    display: none;
+}
+
+h1 {
+    color: darkblue;
+}
+
+h2 {
+    color: #444;
+}
+
+p {
+    font-size: 18px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+ul, ol {
+    display: inline-block;
+    text-align: left;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+
+.buttons {
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    background-color: darkblue;
+    color: white;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #333399;
+}
+
+
+/* ========================= */
+/* COLOUR CHANGE */
+/* ========================= */
+
+#blue:checked ~ h1,
+#blue:checked ~ h2 {
+    color: darkblue;
+}
+
+#green:checked ~ h1,
+#green:checked ~ h2 {
+    color: green;
+}
+
+#pink:checked ~ h1,
+#pink:checked ~ h2 {
+    color: deeppink;
+}
+
+#blue:checked ~ body {
+    background-color: lightblue;
+}
+
+
+/* ========================= */
+/* POPUP */
+/* ========================= */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.6);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-box {
+    background-color: white;
+    padding: 30px;
+    width: 350px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close {
+    display: inline-block;
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Show Alert Popup */
+
+#alert:checked ~ .popup {
+    display: flex;
+}
+
+/* Show Name Popup */
+
+#namePopup:checked ~ .popup {
+    display: flex;
+}
